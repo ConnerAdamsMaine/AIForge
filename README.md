@@ -4,6 +4,7 @@ Welcome to AI Forge! This repository offers a simple yet powerful Python system 
 # Features
 - Train custom models on .CSV based corpora
 - Converse with your custom models
+- VRAM Usage Estimation Algorithm
 - Interactive and intuitive user interface
 - Supports multiple languages and dialects
 - Customizable training parameters for fine-tuning models
@@ -14,10 +15,51 @@ Welcome to AI Forge! This repository offers a simple yet powerful Python system 
 - Community-driven support and contributions
 
 # Installation
+## Prerequisites
 Python 3.10 or newer
+
 ## Steps
 1. Clone the repository:
 ```
 git clone https://github.com/ConnerAdamsMaine/AIForge
 cd AIForge
 ```
+
+2. Create and activate a virtual environment (optional but recommended):
+```
+python -m venv venv
+source venv/bin/activate # On windows use 'venv\Scripts\activate'
+```
+
+3. Install the required libraries:
+```
+pip install -r requirements.txt
+```
+
+# Requirements
+![Pandas]https://pandas.pydata.org/() for handling the CSV files
+![Numpy](https://numpy.org/)
+![Skikit-Learn](https://scikit-learn.org/stable/)
+![Tensorflow](https://www.tensorflow.org/)
+![Keras](https://keras.io/)
+
+# Usage
+1. Prepare your training data in a CSV file.
+2. Use the provided scripts to train your model.
+3. Start a conversation with your trained model.
+
+## Training
+```
+from AIForge import Trainer
+trainer = Trainer('path_to_your_csv_file.csv')
+model = trainer.Train()
+```
+
+## Conversing
+```
+from AIForge import Conversationalist
+conversationalist = Conversationalist(model)
+response = conversationalist.converse('Your input here')
+print(response)
+```
+
