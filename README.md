@@ -37,11 +37,11 @@ pip install -r requirements.txt
 ```
 
 # Requirements
-[Pandas](https://pandas.pydata.org/) for handling the CSV files
-[Numpy](https://numpy.org/)
-[Skikit-Learn](https://scikit-learn.org/stable/)
-[Tensorflow](https://www.tensorflow.org/)
-[Keras](https://keras.io/)
+- [Pandas](https://pandas.pydata.org/) for handling the CSV files
+- [Numpy](https://numpy.org/)
+- [Skikit-Learn](https://scikit-learn.org/stable/)
+- [Tensorflow](https://www.tensorflow.org/)
+- [Keras](https://keras.io/)
 
 # Usage
 1. Prepare your training data in a CSV file.
