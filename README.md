@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ```
 
 # Requirements
-![Pandas]https://pandas.pydata.org/() for handling the CSV files
+![Pandas](https://pandas.pydata.org/) for handling the CSV files
 ![Numpy](https://numpy.org/)
 ![Skikit-Learn](https://scikit-learn.org/stable/)
 ![Tensorflow](https://www.tensorflow.org/)
@@ -49,17 +49,17 @@ pip install -r requirements.txt
 3. Start a conversation with your trained model.
 
 ## Training
-```
+```py
 from AIForge import Trainer
 trainer = Trainer('path_to_your_csv_file.csv')
-model = trainer.Train()
+model = await trainer.Train()
 ```
 
 ## Conversing
-```
+```py
 from AIForge import Conversationalist
 conversationalist = Conversationalist(model)
-response = conversationalist.converse('Your input here')
+response = await conversationalist.converse('Your input here')
 print(response)
 ```
 
